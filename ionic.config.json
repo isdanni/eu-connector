@@ -1,0 +1,8 @@
+{
+  "name": "EU Connector",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "fc7a03d3"
+}
