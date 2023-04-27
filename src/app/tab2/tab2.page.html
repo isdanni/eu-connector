@@ -1,17 +1,144 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header [translucent]="true"  >
+  <ion-toolbar class="new-background-color">
     <ion-title>
-      Tab 2
+      Resources
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="background">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Resources</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card color="primary">
+          <ion-card-header>
+            <ion-card-title>Legal Help</ion-card-title>
+            <ion-card-subtitle><ion-icon name="school-outline"></ion-icon></ion-card-subtitle>
+          </ion-card-header>
+           
+          <ion-card-content>
+            Assistance with the asylum process, Access to legal information, Advocacy and representation,
+            Family reunification, Statelessness, Protection from exploitation
+          </ion-card-content>
+          <img src="../../assets/c8.jpg" width="200" height="100"/>
+
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="secondary">
+          <ion-card-header>
+            <ion-card-title>Shelter</ion-card-title>
+            <ion-card-subtitle><ion-icon name="home-outline"></ion-icon></ion-card-subtitle>
+          </ion-card-header>
+           <ion-card-content>
+            Refugee camps, Host families, Transitional housing, Community housing, Social housing,
+            Self-sufficient housing
+           </ion-card-content>
+           <img src="../../assets/c7.jpg" width="200" height="100"/>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card color="tertiary" class="card-background">
+          <ion-card-header>
+            <ion-card-title>Food and water</ion-card-title>
+            <ion-card-subtitle><ion-icon name="fast-food-outline"></ion-icon></ion-card-subtitle>
+
+          </ion-card-header>
+          <ion-card-content>
+            Emergency food and water, Food assistance, Cash assistance, Food and water distribution, 
+            Agricultural support, Water and sanitation infrastructure...
+          </ion-card-content>
+          <img src="../../assets/c6.jpg" width="180" height="100"/>
+
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="success">
+          <ion-card-header>
+            <ion-card-title>Clothing</ion-card-title>
+            <ion-card-subtitle><ion-icon name="apps-outline"></ion-icon></ion-card-subtitle>
+          </ion-card-header>
+        <ion-card-content>
+          Donations, Clothing distributions, Vouchers, Clothing banks, Sewing workshops, Second-hand Donation, Local clothin Store, Recycled Materials, ...
+      </ion-card-content>
+      <img src="../../assets/c5.jpg" width="200" height="100"/>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card color="warning">
+          <ion-card-header>
+            <ion-card-title>Medical Care</ion-card-title>
+            <ion-card-subtitle><ion-icon name="medkit-outline"></ion-icon></ion-card-subtitle>
+          </ion-card-header>
+        <ion-card-content>
+          Medical screenings, Primary healthcare, Mental health services, Emergency care, Health education, Mobile clinics, Faster Access to Medical Resources
+        </ion-card-content>
+        <img src="../../assets/c4.png" width="205" height="100"/>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="danger">
+          <ion-card-header>
+            <ion-card-title>Education</ion-card-title>
+            <ion-card-subtitle><ion-icon name="book-outline"></ion-icon></ion-card-subtitle>
+          </ion-card-header>
+           <ion-card-content>
+            Formal education,Non-formal education, Language training, Access to technology, 
+            Educational Support, Listed Education Resources
+           </ion-card-content>
+           <img src="../../assets/c3.jpeg" width="205" height="100"/>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card color="medium">
+          <ion-card-header>
+            <ion-card-title>Language support</ion-card-title>
+            <ion-card-subtitle><ion-icon name="language-outline"></ion-icon></ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Interpreters and translators, Language training, Translation of documents, Multilingual resources, Community interpreters, Third-Party Volunteers, ...
+           </ion-card-content>
+           <img src="../../assets/c2.png" width="180" height="90"/>
+
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="dark">
+          
+          <ion-card-header>
+            <ion-card-title>Community</ion-card-title>
+            <ion-card-subtitle><ion-icon name="git-commit-outline"></ion-icon></ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Cultural Education Programs, Volunteer programs, Housing support, Employment Support, 
+            Mental health support, Community Outreach
+           </ion-card-content>
+           <img src="../../assets/c1.jpg" width="200" height="90"/>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

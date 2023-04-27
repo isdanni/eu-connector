@@ -234,3 +234,18 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-toolbar-background: white;
+    --color-toolbar-text: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-toolbar-background: black;
+    --color-toolbar-text: white;
+  }
+}

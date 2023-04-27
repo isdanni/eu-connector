@@ -1,17 +1,47 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="new-background-color">
+    
     <ion-title>
-      Tab 1
+      Map
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content [fullscreen]="true" class="background">
+
+  
+
+
+  <ion-searchbar></ion-searchbar>
+
+  <div id="map" #map></div>
+
+  <div class="contained">
+    <ion-scroll>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="school-outline"></ion-icon> &nbsp; &nbsp; Education
+        </ion-item>
+        <ion-item>
+          <ion-icon name="home-outline"></ion-icon>
+          &nbsp; &nbsp; Shelter 
+
+        </ion-item>
+        <ion-item> 
+          <ion-icon name="fast-food-outline"></ion-icon>
+          &nbsp; &nbsp;   Food  & Water
+        </ion-item>
+        <ion-item>
+          <ion-icon name="medkit-outline"></ion-icon>
+          &nbsp; &nbsp;      Medicine
+        </ion-item>
+      </ion-list>
+    </ion-scroll>
+  </div>
+    
+  <ion-button  shape="round" color="dark">
+    <ion-icon slot="start" name="locate"></ion-icon>
+    Where Am I
+  </ion-button>
 </ion-content>

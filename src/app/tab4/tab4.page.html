@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="new-background-color">
+    <ion-title>
+      Settings
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Settings</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      
+      <ion-avatar  style="display: flex;  justify-content: space-between;">
+        <img  style="display: flex;  justify-content: space-between;"  alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>  &nbsp; &nbsp;Profile</ion-label>
+      <ion-icon name="arrow-forward" end></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label>Local Contacts</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Submit Resources</ion-label>
+      <ion-button id="present-alert2">Add</ion-button>
+      <ion-alert
+  trigger="present-alert2"
+  header="Please enter your info"
+  [buttons]="alertButtons2"
+  [inputs]="alertInputs"
+></ion-alert>
+    </ion-item>
+    <ion-item>
+      <ion-label  (click)="presentAlert()">About this App</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-select aria-label="Fruit" interface="popover" placeholder="Select Languages">
+        <ion-select-option value="en" (click)="nextpage()">English</ion-select-option>
+        <ion-select-option value="ge" (click)="nextpage()">German</ion-select-option>
+        <ion-select-option value="fr" (click)="nextpage()">French</ion-select-option>
+        <ion-select-option value="more" (click)="nextpage()">More Options *</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-toggle [enableOnOffLabels]="true" id="present-alert">Enable Notifications</ion-toggle>
+      <ion-alert
+      trigger="present-alert"
+      header="System Message"
+      subHeader="Important message"
+      message="Notifications Enabled!"
+      [buttons]="alertButtons"
+    ></ion-alert>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item lines="full">
+      <ion-icon slot="start" name="moon"></ion-icon>
+      <ion-label>
+        Toggle Dark Theme
+      </ion-label>
+      <ion-toggle id="themeToggle" slot="end"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+

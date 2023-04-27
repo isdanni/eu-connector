@@ -1,17 +1,140 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="new-background-color">
     <ion-title>
-      Tab 3
+      Saved
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="background">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Saved</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-list>
+    <ion-accordion-group>
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label>Closest Shelter</ion-label>
+          <ion-badge color="danger">4</ion-badge>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          temporary housing
+        </div>
+        <div class="ion-padding" slot="content">
+          emergency shelters
+        </div>
+        <div class="ion-padding" slot="content">
+          long-term housing solutions
+        </div>
+        <div class="ion-padding" slot="content">
+          free hostels
+        </div>
+      </ion-accordion>
+      <ion-accordion value="second">
+        <ion-item slot="header" color="light">
+          <ion-label>Food and water</ion-label>
+          <ion-badge color="tertiary">3</ion-badge>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          clean drinking water (Local)
+        </div>
+        <div class="ion-padding" slot="content">
+          Water Bottel Recycle
+        </div>
+        <div class="ion-padding" slot="content">
+          Daily Free Food Stand()
+        </div>
+      </ion-accordion>
+      <ion-accordion value="third">
+        <ion-item slot="header" color="light">
+          <ion-label>Medical care</ion-label>
+          <ion-badge color="primary">3</ion-badge>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Nearby clinics
+        </div>
+        <div class="ion-padding" slot="content">
+          Medcine Stand (30 miles)
+        </div>
+        <div class="ion-padding" slot="content">
+          ER (30 miles)
+        </div>
+      </ion-accordion>
+      <ion-accordion value="fourth">
+        <ion-item slot="header" color="light">
+          <ion-label>Legal Assistance</ion-label>
+          <ion-badge color="secondary">1</ion-badge>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Pro Bono
+        </div>
+      </ion-accordion>
+      <ion-accordion value="fifth">
+        <ion-item slot="header">
+          <ion-label>Language Support</ion-label>
+          <ion-badge color="primary">3</ion-badge>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          ESL
+        </div>
+        <div class="ion-padding" slot="content">
+          Learn your Local Language
+        </div>
+        <div class="ion-padding" slot="content">  
+          Free Discussion Group 
+        </div>
+      </ion-accordion>
+      <ion-accordion value="sixth">
+        <ion-item slot="header">
+          <ion-label>Community Support</ion-label>
+          <ion-badge color="success">2</ion-badge>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Social Support
+        </div>
+        <div class="ion-padding" slot="content">
+          Local Connections
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </ion-list>
+
+
+  <ion-text color="primary">
+    <h1>&nbsp; &nbsp; Recently Viewed: </h1>
+  </ion-text>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Top 10 Tips Seeking Legal Help in a New Country</ion-card-title>
+      <ion-card-subtitle>Understand Your Legal Rights and Options</ion-card-subtitle>
+
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-badge color="warning">views: 8734</ion-badge>
+
+      &nbsp; &nbsp; It can be challenging to navigate the legal system in a new country. Here are some general guidelines to help you seek legal help: ...    </ion-card-content>
+  
+    <ion-button fill="clear">Open</ion-button>
+    <ion-button fill="clear">Delete</ion-button>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Sme Tips to Help your Housing Application Journey Less Stressful</ion-card-title>
+      <ion-card-subtitle>Determine your eligibility for housing assistance programs</ion-card-subtitle>
+
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-badge color="danger">views: 100k</ion-badge>
+
+      &nbsp; &nbsp;      Contact your local refugee resettlement agency. They can provide you with information about affordable housing options, including subsidized housing programs and private rental options that may be available...  </ion-card-content>
+  
+    <ion-button fill="clear">Open</ion-button>
+    <ion-button fill="clear">Delete</ion-button>
+  </ion-card>
 </ion-content>

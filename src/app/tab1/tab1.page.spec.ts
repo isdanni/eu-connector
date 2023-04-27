@@ -5,6 +5,9 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab1Page } from './tab1.page';
 
+import { GoogleMap } from '@capacitor/google-maps';
+
+
 describe('Tab1Page', () => {
   let component: Tab1Page;
   let fixture: ComponentFixture<Tab1Page>;
@@ -24,3 +27,4 @@ describe('Tab1Page', () => {
     expect(component).toBeTruthy();
   });
 });
+

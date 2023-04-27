@@ -1,0 +1,28 @@
+.new-background-color {
+    --background: #145DA0;
+}
+
+
+ion-title {
+    --color: #FFFFFF;
+}
+
+
+ion-avatar {
+    --border-radius: 4px;
+}
+
+ion-toolbar {
+    --background: var(--color-toolbar-background);
+    color: var(--color-toolbar-text);
+  }
+  .verticalScrollContainer {
+    background: var(--color-toolbar-background);
+  }
+
+ion-content.background{
+    --background: url(../../assets/w.jpg);
+}
+.bg-transparent {
+    background: transparent;
+  }
